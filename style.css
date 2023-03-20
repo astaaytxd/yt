@@ -3,14 +3,14 @@
   padding: 0;
 }
 body {
-    width: 100vw;
-   /* height: 100vh;*/
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #424242;
-    padding: 20px;
+  width: 100vw;
+  /* height: 100vh;*/
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #424242;
+  padding: 50px 10px;
 }
 .head {
   display: flex;
@@ -25,20 +25,19 @@ body {
   border-radius: 10px;
 }
 .card {
-  width: 90%;
-  max-width: 600px;
+  /* width: 90%; */
+  width: 400px;
   background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
   border-radius: 20px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .container {
   width: 100%;
-  max-width: 600px;
-/* margin: auto;*/
+  /* margin: auto;*/
   background-color: darkgray;
   background-color: #1a1a1a;
-  border-radius:20px;
-  transition: all .2s;
+  border-radius: 20px;
+  transition: all 0.2s;
 }
 .container:hover {
   transform: scale(0.99);
@@ -46,7 +45,7 @@ body {
 }
 
 .card:hover {
-  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
 }
 .profile {
   display: flex;
@@ -57,6 +56,7 @@ body {
 }
 .profile img {
   height: 120px;
+  width: 120px;
   border: 5px solid lightblue;
   border-radius: 100%;
 }
@@ -90,7 +90,7 @@ body {
   margin: 5px;
 }
 .menu:hover {
-  background-color: #0071e2
+  background-color: #0071e2;
 }
 .menu2 {
   border: 3px solid #333;
@@ -99,11 +99,10 @@ body {
   margin: 5px;
 }
 .menu2:hover {
-  background-color: #212121
+  background-color: #212121;
 }
-.icon img{
+.icon img {
   height: 30px;
-  
 }
 
 .btn-share img {
@@ -128,11 +127,11 @@ footer {
   text-align: center;
   padding: 20px 0 10px 0;
 }
-footer p{
+footer p {
   font-size: 10px;
   font-weight: 500;
   color: white;
-}/*
+} /*
 .btn-share {
   background-color: white;
   border-radius: 5px;
@@ -141,34 +140,20 @@ footer p{
   justify-content: center;
   align-items: center;
 }*/
-
-@media screen and (min-width: 900px) {
-  body {
-    height: 100vh;
+/* Media query laptop*/
+@media (max-width: 1200px) {
+  .card {
+    width: 400px;
   }
-  .profile img {
-  height: 160px;
-  border: 5px solid lightblue;
-  border-radius: 100%;
 }
-  .profile h1 {
-    font-size: 30px;
-    padding: 10px;
-    color: white;
+/* Media query tablet */
+@media (max-width: 900px) {
+  .card {
+    width: 400px;
   }
-  .main p {
-    font-size: 15px;
-  }
-  .menu p {
-    font-size: 20px;
-  }
-  .menu2 p {
-    font-size: 20px;
-  }
-  .icon img {
-    height: 40px;
-  }
-  .btn-share img {
-    height: 40px;
+}
+@media (max-width: 450px) {
+  .card {
+    width: 91%;
   }
 }
