@@ -10,6 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #424242;
+  font-family: 'Poppins' sans-serif;
 }
 /* CARD STYLE */
 .card {
